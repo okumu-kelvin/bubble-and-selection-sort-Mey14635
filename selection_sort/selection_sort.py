@@ -1,18 +1,18 @@
 def selection_sort(arr):
-    # TODO: Implement selection sort
-for i in range(n):
-    minpos=i
-//the first loop go through each index i in the list by not the last one
-    for j in range(len(arr)-1):
-// minpos will track the index of the smallest value found in the remaining list
-        if arr[j]<arr[minpos]:
-            minpos=j
-     temp=arr[i]
-     arr[i]=arr[minpos]
-     arr[minpos]=temp
- arr=[5, 4, 3, 2, 1, 0]
- selection_sort(arr)
- print(arr)
+    # Go through each index i in the list except the last
+    for i in range(len(arr) - 1):
+        minpos = i  # Track the position of the smallest value
+        for j in range(i, len(arr)):  # Compare with the rest of the array
+            if arr[j] < arr[minpos]:
+                minpos = j
+        # Swap the elements
+        temp = arr[i]
+        arr[i] = arr[minpos]
+        arr[minpos] = temp
 
- return arr
-    pass
+    return arr  # Return the sorted list
+
+# Test the function
+arr = [5, 4, 3, 2, 1, 0]
+selection_sort(arr)
+print(arr)
