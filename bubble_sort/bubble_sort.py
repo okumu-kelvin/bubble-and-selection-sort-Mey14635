@@ -1,7 +1,7 @@
 def bubble_sort(unsorted_list):
     # TODO: Implement bubble sort
 //the first loop is to check how many time will go through the array
-        for i in range(len(unsorted_list)-1,0,-1)
+        for i in range(len(unsorted_list)-1,0,-1):
 //the second loop is to do the comparison then swap them
             for j in range(i):
                 //To do the swap we add a temporary variable to store the variable
